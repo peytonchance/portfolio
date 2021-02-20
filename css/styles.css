@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Heebo', sans-serif;
+    font-size: 18px;
 }
 
 a {
@@ -12,14 +13,30 @@ h1 {
     margin: 0;
 }
 
-main {
-    margin: auto;
-    padding: 0 20%;
+h2 {
+    font-weight: 300;
+    font-size: 1.4rem;
 }
 
-@media only screen and (max-width: 600px) {
+main {
+    padding: 10px 20%;
+}
+
+.sr-only {
+    left: -2000px;
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+@media only screen and (max-width: 1000px) {
     main {
-        padding: 5%;
+        margin: 0 auto;
+        padding: 0 10%;
     }
 }
 
@@ -73,13 +90,104 @@ header a:active {
 
 @media only screen and (max-width: 600px) {
     header ul {
-        width: 250px;
         margin-top: 5px;
+        width: 250px;
     }
+}
+
+footer {
+    margin-top: 100px;
+    text-align: center;
 }
 
 
 /* Homepage */
+
+/* .intro {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+} */
+
+.intro div {
+    width: 65%;
+}
+
+.headshot {
+    /* border-radius: 50%; */
+    width: 200px;
+}
+
+.clients {
+    margin-top: 50px;
+}
+
+.clients p {
+    width: 65%;
+}
+
+.clients-list {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 75px 0px 0px -9%;
+    padding: 0;
+    width: 115%;
+}
+
+.clients-list li {
+    margin-bottom: 25px;
+}
+
+.client-logo {
+    text-decoration: none;
+}
+
+.client-logo img {
+    max-width: 150px;
+    max-height: 75px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    
+    .clients-list {
+        /* flex-direction: column; */
+        padding: 0;
+        width: unset;
+        margin: 65px 0 0 0;
+    }
+
+    .client-logo img {
+        max-width: 125px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .intro div {
+        width: 100%;
+    }
+
+    .clients p {
+        width: 100%;
+    }
+
+    .clients-list {
+        flex-direction: column;
+    }
+
+    .clients li {
+        max-width: 100%;
+        width: unset;
+    }
+
+    .client-logo img {
+        max-width: 150px;
+    }
+}
 
 /* About */
 
