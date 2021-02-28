@@ -9,6 +9,10 @@ a {
     color: #000;
 }
 
+strong {
+    font-weight: 600;
+}
+
 h1 {
     margin: 0;
 }
@@ -247,8 +251,12 @@ footer {
     width: 45%;
 }
 
-.work-list img {
+.work-list-img--link {
     width: 50%;
+}
+
+.work-list img {
+    width: 100%;
 }
 
 .work-list--project-type {
@@ -259,6 +267,7 @@ footer {
 .work-list h2 {
     font-size: 1.2rem; 
     font-weight: 500;
+    text-decoration: underline;
 }
 
 .work-list a {
