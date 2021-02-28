@@ -14,8 +14,13 @@ h1 {
 }
 
 h2 {
-    font-weight: 300;
     font-size: 1.4rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 ul {
@@ -36,6 +41,17 @@ main {
 li {
     list-style-type: none;
 }
+
+  dt {
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: left;
+    font-weight: bold;
+  }
+  dd {
+    padding: 0 0 0.5em 4.5em;
+  }
 
 @media only screen and (max-width: 1000px) {
     main {
@@ -195,6 +211,10 @@ footer {
 }
 
 /* About */
+
+.about-wrapper:not(:first-of-type) {
+    margin-top: 50px;
+}
 
 /* Work */
 
