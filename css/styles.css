@@ -28,6 +28,8 @@ ul {
 }
 
 main {
+    margin: auto;
+    max-width: 75ch;
     padding: 10px 20%;
 }
 
@@ -124,13 +126,6 @@ footer {
 
 /* Homepage */
 
-/* .intro {
-    align-items: center;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-} */
-
 .intro div {
     width: 65%;
 }
@@ -175,7 +170,6 @@ footer {
 @media only screen and (max-width: 1000px) {
     
     .clients-list {
-        /* flex-direction: column; */
         padding: 0;
         width: unset;
         margin: 65px 0 0 0;
@@ -292,3 +286,17 @@ footer {
 
 }
 
+/* Words */
+
+
+.words-list li:not(:first-of-type) {
+    margin-top: 50px;
+}
+
+.words-list li:first-of-type {
+    margin-top: 30px;
+}
+
+.words-list p {
+    font-size: 1rem;
+}
