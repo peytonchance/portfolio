@@ -18,6 +18,10 @@ h2 {
     font-size: 1.4rem;
 }
 
+ul {
+    padding: 0;
+}
+
 main {
     padding: 10px 20%;
 }
@@ -59,7 +63,6 @@ header ul {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    padding: 0;
     width: 270px;
 }
 
@@ -68,8 +71,10 @@ header a {
     text-decoration: none;
 }
 
-header a:active {
-    text-decoration: underline;
+.active::after {
+    content: '';
+    display: block;
+    border-bottom: solid #000 2px;
 }
 
 .skip-to {
@@ -192,3 +197,78 @@ footer {
 /* About */
 
 /* Work */
+
+.tags {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.tag-role {
+    background: #F6BD2B;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    margin: 10px 3px 0;
+    padding: 6px 17px;
+    width: fit-content;
+}
+
+.work-list ul {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
+.work-list li {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-right: 10px;
+}
+
+.work-list--text {
+    margin-left: 30px;
+    padding-top: 10px;
+    width: 45%;
+}
+
+.work-list img {
+    width: 50%;
+}
+
+.work-list--project-type {
+    font-size: 0.9rem;
+    margin-top: -15px;
+}
+
+.work-list h2 {
+    font-size: 1.2rem; 
+    font-weight: 500;
+}
+
+.work-list a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .work-list li {
+        margin-top: 50px;
+    }
+
+    .work-list--text{
+        margin-left: 0;
+        max-width: 410px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .work-list img {
+        width: 100%;
+    }
+
+}
+
