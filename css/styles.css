@@ -1,8 +1,12 @@
 /* Global */
 
 body {
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Assistant', sans-serif;
     font-size: 18px;
+}
+
+p {
+    line-height: 1.4;
 }
 
 a {
