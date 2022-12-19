@@ -6,7 +6,17 @@
 		
 		<!-- Thanks for taking a peek under the hood. There's not much to see here, just good 'ole HTML, CSS, and JS. -->
 		
-		<link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7HJ7N50M2"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-Z7HJ7N50M2');
+        </script>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
 	    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="/css/styles.css">
 		<meta charset="UTF-8">
@@ -53,7 +63,7 @@
         </main>
         
         <footer>
-            <p>Copyright Peyton Chance, 2021</p>
+            <p>Copyright Peyton Chance, <script>document.write(new Date().getFullYear());</script></p>
         </footer>
     </body>
 </html>
